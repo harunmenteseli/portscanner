@@ -10,7 +10,7 @@ def port_scanner(ip, port):
     except:
         print(f'{port} numaralı port kapalı.')
 
-ip = input("Enter IP address: ")
+ip = input("IP Adresini gir: ")
 start_port = int(input("Başlangıç portunu gir: "))
 end_port = int(input("Bitiş portunu gir: "))
 
