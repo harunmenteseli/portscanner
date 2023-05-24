@@ -5,14 +5,14 @@ def port_scanner(ip, port):
     s.settimeout(5)
     try:
         s.connect((ip, port))
-        print(f' {port} numaralı port açık.')
+        print(f' {port} port is open.')
         s.close()
     except:
-        print(f'{port} numaralı port kapalı.')
+        print(f'{port} port is closed.')
 
-ip = input("IP Adresini gir: ")
-start_port = int(input("Başlangıç portunu gir: "))
-end_port = int(input("Bitiş portunu gir: "))
+ip = input("Enter IP Address: ")
+start_port = int(input("Enter end port: "))
+end_port = int(input("Enter end port: "))
 
 for port in range(start_port, end_port + 1):
     port_scanner(ip, port)
